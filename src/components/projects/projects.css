@@ -1,0 +1,283 @@
+.p {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height:100vh;
+    margin-top: 0;
+}
+.p .arrow {
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.p .arrow.left {
+        left: 15rem;
+        transform: rotateY(180deg);
+        transition: 0.1s ease !important;
+}
+
+.p .arrow.right {
+        right: 10rem;
+        transition: 0.1s ease !important;
+}
+
+.p .slider {
+    height: 700px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    transition: all 1s ease-out;
+}
+
+.p .slider .containerp {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p .slider .containerp .item {
+    width: 900px;
+    height: 90%;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.p .slider .containerp .item .left {
+    flex: 4;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .containerp .item .left .left-container {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.slider .containerp .item .left .left-container h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.slider .containerp .item .left .left-container p {
+    margin-top: 10px;
+    font-size: 17px;
+    color: white;
+}
+
+.slider .containerp .item .left .left-container span {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+
+.slider .containerp .item .left .left-container .img-container img {
+    width: 25px;
+}
+
+.slider .containerp .item .right {
+    flex: 8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.slider .containerp .item .right:hover {
+    opacity: 0.5;
+}
+
+.slider .containerp .item .right a{
+    margin-left: 100px;
+    object-fit: cover;
+}
+
+.slider .containerp .item .right a img {
+        height: 500px;
+        transform: rotate(10deg);
+        object-fit: cover;
+}
+
+
+
+@media (max-width:1530px){
+    .p {
+        overflow: hidden;
+    }
+
+    .p .arrow {
+        height: 60px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .p .arrow.left {
+        left: 11rem;
+    }
+
+    .p .arrow.right {
+        right: 5rem;
+    }
+}
+
+@media (max-width:1314px){
+    .p .arrow {
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .p .slider .containerp .item {
+        width: 700px;
+        height: 90%;
+    }
+}
+
+@media (max-width:1200px){
+    .p .slider .containerp .item {
+        margin-left: 0;
+    }
+    .p .arrow.left {
+        left: 9rem;
+    }
+
+    .p .arrow.right {
+        right: 9rem;
+    }
+}
+
+@media (max-width:1160px){
+    .p .slider .containerp .item {
+        width: 500px;
+        height: 90%;
+    }
+}
+
+@media (max-width:935px){
+    .p .slider .containerp .item {
+        width: 450px;
+        height: 90%;
+    }
+    .p .arrow.left {
+        left: 7rem;
+    }
+
+    .p .arrow.right {
+        right: 7rem;
+    }
+}
+
+@media (max-width:790px){
+    .p .slider .containerp .item {
+        width: 450px;
+        height: 90%;
+    }
+    .p .arrow {
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+    }
+    .p .arrow.left {
+        left: 4rem;
+    }
+
+    .p .arrow.right {
+        right: 4rem;
+    }
+}
+
+@media (max-width:770px){
+    .p .slider .containerp .item {
+        width: 450px;
+        height: 70%;
+    }
+    .p .slider .containerp {
+        padding: 0px;
+        margin: 0;
+    }
+
+    .p .slider{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .p .arrow {
+        display: none;
+    }
+    .slider .containerp .item .right a img {
+        width: 400px;
+        height: 150px;
+        transform: rotate(-10deg);
+        
+    }
+    .slider .containerp .item .left .left-container h2 {
+        font-size: 20px;
+    }
+    .slider .containerp .item .left .left-container p {
+        display: none;
+    }
+
+}
+
+@media (max-width:455px) {
+    .p .slider .containerp .item {
+        width: 300px;
+        height: 80%;
+        
+    }
+    .slider .containerp .item .left .left-container h2 {
+        font-size: 10px;
+    }
+
+}
+@media (max-width:358px) {
+    .p .slider .containerp .item {
+        width: 200px;
+        height: 70%;
+    }
+
+}
+@media (max-width:455px) {
+    .p .slider .containerp .item {
+        width: 300px;
+        height: 80%;
+    }
+    .slider .containerp .item .right a img {
+        width: 300px;
+        height: 150px;
+        transform: rotate(-10deg);
+
+    }
+
+}
+
+@media (max-width:360px) {
+    .p .slider .containerp .item {
+        width: 200px;
+        height: 70%;
+    }
+    .slider .containerp .item .left .left-container h2 {
+        font-size: 10px;
+    }
+
+}
+
