@@ -64,10 +64,6 @@ export default function Skills() {
                         <h2 className="skn">PYTHON</h2>
                     </div>
                     <div className="cardsk4">
-                        <h5 ><SiSocketdotio color="white" className="s-icon" size="60px"/></h5>
-                        <h2 className="skn">SOCKET.IO</h2>
-                    </div>
-                    <div className="cardsk4">
                         <h5 ><SiMongodb color="#3fa037" className="s-icon" size="60px"/></h5>
                         <h2 className="skn">MONGODB</h2>
                     </div>

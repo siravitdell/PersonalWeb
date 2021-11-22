@@ -77,6 +77,7 @@ h2 {
     color: navy;
     display: flex;
     align-items: center;
+    display: none;
 }
 
 #i-title-item1{
@@ -87,6 +88,7 @@ h2 {
     display: flex;
     text-align: center;
     padding-left: 100px;
+    display: none;
 }
 
 .i-scroll {
